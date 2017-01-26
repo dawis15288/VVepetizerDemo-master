@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11760" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11755"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="FZLTXIHJW--GB1-0.TTF">
+            <string>FZLTXIHJW--GB1-0</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="TFg-Sx-R5k" customClass="VVMainTabView" customModule="VVepetizerDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DRo-Sl-ko0">
+                    <rect key="frame" x="0.0" y="0.0" width="106.5" height="40"/>
+                    <fontDescription key="fontDescription" name="FZLTXIHJW--GB1-0" family="FZLanTingHeiS-L-GB" pointSize="14"/>
+                    <state key="normal" title="每 日 精 选">
+                        <color key="titleColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="choicButtonClick:" destination="TFg-Sx-R5k" eventType="touchUpInside" id="R5s-3A-nT9"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gEK-tC-o5W">
+                    <rect key="frame" x="107" y="0.0" width="106" height="40"/>
+                    <fontDescription key="fontDescription" name="FZLTXIHJW--GB1-0" family="FZLanTingHeiS-L-GB" pointSize="14"/>
+                    <state key="normal" title="发 现 更 多">
+                        <color key="titleColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="discoverButtonClick:" destination="TFg-Sx-R5k" eventType="touchUpInside" id="C4R-T8-exc"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WqE-Am-QCG">
+                    <rect key="frame" x="213.5" y="0.0" width="106.5" height="40"/>
+                    <fontDescription key="fontDescription" name="FZLTXIHJW--GB1-0" family="FZLanTingHeiS-L-GB" pointSize="14"/>
+                    <state key="normal" title="热 门 排 行">
+                        <color key="titleColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="popularButtonClick:" destination="TFg-Sx-R5k" eventType="touchUpInside" id="4FH-dA-qBR"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cMb-bO-WVx">
+                    <rect key="frame" x="106.5" y="10" width="1" height="20"/>
+                    <color key="backgroundColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="62O-sh-ql8"/>
+                        <constraint firstAttribute="height" constant="20" id="frb-P1-3fQ"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nNw-sG-exO">
+                    <rect key="frame" x="213.5" y="10" width="1" height="20"/>
+                    <color key="backgroundColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="ITr-LW-yft"/>
+                        <constraint firstAttribute="width" constant="1" id="LL1-Xf-mJx"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="WqE-Am-QCG" firstAttribute="leading" secondItem="gEK-tC-o5W" secondAttribute="trailing" id="3c0-3T-Hxv"/>
+                <constraint firstItem="WqE-Am-QCG" firstAttribute="height" secondItem="DRo-Sl-ko0" secondAttribute="height" id="G5d-4Z-gBW"/>
+                <constraint firstItem="gEK-tC-o5W" firstAttribute="leading" secondItem="cMb-bO-WVx" secondAttribute="leading" id="IF2-np-gMA"/>
+                <constraint firstItem="gEK-tC-o5W" firstAttribute="height" secondItem="DRo-Sl-ko0" secondAttribute="height" id="Oyb-9g-Tb3"/>
+                <constraint firstItem="nNw-sG-exO" firstAttribute="leading" secondItem="WqE-Am-QCG" secondAttribute="leading" id="P53-fW-fqe"/>
+                <constraint firstItem="WqE-Am-QCG" firstAttribute="width" secondItem="DRo-Sl-ko0" secondAttribute="width" id="aIf-52-svg"/>
+                <constraint firstAttribute="bottom" secondItem="DRo-Sl-ko0" secondAttribute="bottom" id="bDV-Na-pls"/>
+                <constraint firstAttribute="bottom" secondItem="gEK-tC-o5W" secondAttribute="bottom" id="cmh-2T-HX5"/>
+                <constraint firstItem="gEK-tC-o5W" firstAttribute="top" secondItem="TFg-Sx-R5k" secondAttribute="top" id="cxz-cj-sUC"/>
+                <constraint firstItem="WqE-Am-QCG" firstAttribute="top" secondItem="TFg-Sx-R5k" secondAttribute="top" id="fcE-A8-8xL"/>
+                <constraint firstItem="DRo-Sl-ko0" firstAttribute="top" secondItem="TFg-Sx-R5k" secondAttribute="top" id="hhd-Zr-dY0"/>
+                <constraint firstItem="DRo-Sl-ko0" firstAttribute="leading" secondItem="TFg-Sx-R5k" secondAttribute="leading" id="kQv-7k-BmH"/>
+                <constraint firstItem="cMb-bO-WVx" firstAttribute="centerY" secondItem="TFg-Sx-R5k" secondAttribute="centerY" id="mBK-ID-NeF"/>
+                <constraint firstItem="gEK-tC-o5W" firstAttribute="centerY" secondItem="TFg-Sx-R5k" secondAttribute="centerY" id="pqR-TE-tZ4"/>
+                <constraint firstItem="gEK-tC-o5W" firstAttribute="leading" secondItem="DRo-Sl-ko0" secondAttribute="trailing" id="vYL-AC-vy3"/>
+                <constraint firstItem="gEK-tC-o5W" firstAttribute="width" secondItem="DRo-Sl-ko0" secondAttribute="width" id="wMk-Fw-9au"/>
+                <constraint firstAttribute="bottom" secondItem="WqE-Am-QCG" secondAttribute="bottom" id="wU0-RV-GUY"/>
+                <constraint firstItem="nNw-sG-exO" firstAttribute="centerY" secondItem="TFg-Sx-R5k" secondAttribute="centerY" id="xqa-lA-bwX"/>
+                <constraint firstAttribute="trailing" secondItem="WqE-Am-QCG" secondAttribute="trailing" id="yVg-UE-Jtq"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="choiceButton" destination="DRo-Sl-ko0" id="ovk-Th-9rV"/>
+                <outlet property="discoverButton" destination="gEK-tC-o5W" id="gCA-Eb-TS3"/>
+                <outlet property="popularButton" destination="WqE-Am-QCG" id="8TR-3x-arQ"/>
+            </connections>
+            <point key="canvasLocation" x="8" y="14"/>
+        </view>
+    </objects>
+</document>
